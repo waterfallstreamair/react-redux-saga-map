@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import styled from "styled-components";
 
 import Map from "./Map";
+import Form from "./Form";
 
 const Container = styled.div`
   display: flex;
@@ -18,6 +19,7 @@ const HomePage = () => {
     <Container>
       <h1>Map Distance</h1>
       <h2>Please choose 2 points</h2>
+      <Form />
       <Map />
     </Container>
   );
