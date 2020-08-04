@@ -2,6 +2,8 @@ import React, { useState, useEffect, useCallback } from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 
+import Map from "./Map";
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +18,7 @@ const HomePage = () => {
     <Container>
       <h1>Map Distance</h1>
       <h2>Please choose 2 points</h2>
+      <Map />
     </Container>
   );
 };
